@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{ 
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+}
+:root{
+    --maincolor:rgb(227, 225, 142);
+}
+header{
+  height: 50px;
+   max-width:700px;
+    margin: 0px auto;
+    box-sizing: border-box;
+}
+.uperbox{
+    margin: 0px 10px;;
+    /* background-color:var(--maincolor); */
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    text-decoration: none;
+   box-sizing: border-box;
+   display: flex;
+   gap: .2rem;
+}
+.gearicon{
+   margin-top:3px;
+    height: 18px;
+    width: 18px;
+   }
+   .StudySync{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav{
+    display: flex;
+    gap: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    display: none;
+}
+.nav a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.599);
+    font-weight: 600;
+}
+.nav a:hover{
+    color:var(--blue);
+}
+.button{
+    height: 28px;
+    width: 80px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(53, 3, 253, 0.795);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: .7rem;
+    transition:all 10ms ease-in-out;
+  
+}
+.btn{
+    display: none;
+}
+.manuimage{
+    height: 2rem;
+     width: 2rem;
+}
+@media(min-width:541px){
+    .btn{
+        display: block;
+    }
+    .manuimage{
+        display: none;
+    }
+    .nav{
+    display: flex;
+   }
+}
+.button:hover{
+    background-color: rgba(0, 0, 255, 0.752);
+}
+
+@media(max-width:540px){
+    
+    header{
+    height: 50px;
+    width:97vw;
+    margin: 0px auto;
+    box-sizing: border-box;
+}
+.uperbox{
+    margin: 3px 5px;;
+      /* background-color: aquamarine;  */
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+} 
+    </style>
+
+</head>
+<body>
+   <header>
+    <div class="uperbox">
+         <a href="#logoicon" class="logo">
+              <img src="pen-tool.png" alt="" class="gearicon">
+              <span class="StudySync">StudySync</span>
+        </a>
+       <div class="nav">
+        <a href="">Home</a>
+        <a href="">Features</a>
+        <a href="">Pricing</a>
+        <a href="">Blogs</a>
+        <a href="">About</a>
+       </div>
+       <a href="#contact" class="btn"> <button class="button">Contact Us</button></a>
+       <img src="three-line.png" alt="manu" class="manuimage">
+    </div>
+    
+   </header>
+</body>
+</html>
